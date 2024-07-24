@@ -1,6 +1,22 @@
 //class
 class Customer {
   String? name;
+  int age;
+
+  //constructor
+  Customer(this.name, this.age);
+}
+void main(){
+  //object
+  Customer customer = Customer("JO", 22);
+  print(customer.age);
+}
+
+//--------------------------------------------------------
+
+//class
+class Customer {
+  String? name;
   int? age;
 
   //Default constructor
