@@ -15,3 +15,4 @@ SOLID
 5️⃣ D => Dependency Inversion
 
 كل من ال high و low class لا يعتمدون علي بعض بل يعتمدون علي abstraction
+- [SOLID](https://dev.to/lionnelt/solid-principles-in-dartflutter-2g21)
