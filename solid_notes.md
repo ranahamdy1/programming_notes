@@ -16,3 +16,4 @@ SOLID
 
 كل من ال high و low class لا يعتمدون علي بعض بل يعتمدون علي abstraction
 - [SOLID](https://dev.to/lionnelt/solid-principles-in-dartflutter-2g21)
+- [SOLID](https://medium.com/nerd-for-tech/solid-principles-in-a-flutter-32eaf7218476)
