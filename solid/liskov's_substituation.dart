@@ -1,20 +1,22 @@
+import 'dart:math';
+
 abstract class Shape {
   double area();
 }
 
 class Rectangle implements Shape {
-  double width;
-  double height;
+  double? width;
+  double? height;
 
   double area() {
-    return width * height;
+    return width! * height!;
   }
 }
 
 class Square implements Shape {
-  double side;
+  double? side;
 
   double area() {
-    return pow(side, 2);
+    return pow(side!, 2) as double;
   }
 }
