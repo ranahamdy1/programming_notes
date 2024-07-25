@@ -1,9 +1,10 @@
 void main() {
   var human = Student();
+  print(human.name);
 }
 
 abstract class Human {
-  String? name;
+  String? name = 'rana';
   //abstract method
    void drink();
    void eat();

@@ -13,7 +13,7 @@ void main(){
 }
 
 //--------------------------------------------------------
-
+/*
 //class
 class Customer {
   String? name;
@@ -33,3 +33,4 @@ class Customer {
 var customer = Customer("JO", 22);
 
 // Default and Parameterized constructor can not come with each other
+*/
