@@ -1,1 +1,1 @@
-![design_patterns](images\design_patternes.jpeg)
+![design_patterns](images/design_patternes.jpeg)
