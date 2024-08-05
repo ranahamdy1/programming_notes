@@ -8,15 +8,22 @@ Design Patterns:
 ![design_patterns](images/design_patternes.jpeg)
 
 
-1- Creational
+1- Creational >>إنشاء 
 
-دى بتهتم بال object و class 
+(how to create an object or class )
 
-2-  Structural
+من اسمه دا بيهتم بإنشاء object او class
 
-دى بتهتم <بالعلاقات> بين ال class وبعضها وبين ال objects وبعضها
+-مثلا لو عندى class وعايزه اعمل منه نسخه 
+
+2-  Structural >>علاقات
+
+دا بيهتم <بالعلاقات> بين ال class وبعضها وبين ال objects وبعضها
+
 -يعنى العلاقه بين two screens  مثلا 
 
-3- Behavioral
+3- Behavioral >>سلوك
 
 السلوك بتاع ال object او ال class
+
+-لو عندى اكتر من if conditions هنا هنفذ اوامر تحت شرط معين وبكده هينفذ سلوك معين
