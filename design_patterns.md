@@ -3,7 +3,7 @@ Design Patterns:
 
 حلول عامه لمجموعه مشاكل شائعه واجهت الناس قبل كده
 
-تنقسم لثلاثه انزاع 
+تنقسم لثلاثه انواع: 
 
 ![design_patterns](images/design_patternes.jpeg)
 
