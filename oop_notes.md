@@ -55,11 +55,11 @@ Ali.email = 22
 دا ذى ال abstraction بس بيخلينى اغير فى شكل ال reference بتاعى ذى ما انا عاوز 
 وله نوعين
 
-1- override تعدد الكتابه
+1- override(run time) تعدد الكتابه
 
 ودا بغير فى ال implementation للميثود .
 
-2- overloading تعدد القرايه
+2- overloading(compile time) تعدد القرايه
 
 ودا بغير فى ال parameter .
 
