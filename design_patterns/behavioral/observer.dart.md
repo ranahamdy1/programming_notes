@@ -4,3 +4,32 @@ Observer
 
 لو عندى مدير والمدير دا عنده موظف الموظف دا كل شويه يجى يقول للمدير عاوز اعملك حاجه ؟ فممكن المدير يضايق ان الموظف كل شويه يجى له 
 فعملنا ال observer ان الموظف دا يقعد أدام الباب بتاع المدير وكل ما المدير يحتاج حاجه يروح يطلبها من الموظف فهنا الموظف مش بيزعج حد وكمان قاعد listener بس بيعمل المطلوب منه دا كده ال observer ببساطه.
+
+- (المراقب): مراقبه الاخرين والاستجابه للتغيرات عند حدوثها.
+
+- EX: 
+
+class Subject {
+  List<Observer> _observers = [];
+
+  void addObserver(Observer observer) {
+    _observers.add(observer);
+  }
+
+  void notifyObservers(String event) {
+    for (var observer in _observers) {
+      observer.update(event);
+    }
+  }
+}
+
+abstract class Observer {
+  void update(String event);
+}
+
+class ConcreteObserver implements Observer {
+  @override
+  void update(String event) {
+    print("Observer received event: $event");
+  }
+}
