@@ -1,1 +1,1 @@
-![data_structure](images\dataStructure.jpg)
+![data_structure](images/dataStructure.jpg)
