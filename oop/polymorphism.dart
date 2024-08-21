@@ -1,29 +1,32 @@
-void main() {
-  //abstract class can not be instantiated
-  //Animal a1 = new Animal();
-  Animal a1 = Dog();
-  a1.eat();
-  a1 = Cat();
-  a1.eat();
-}
-
 abstract class Animal {
-  //abstraction
+  // Abstract method to be overridden by subclasses
   void eat();
 }
 
-class Dog extends Animal {
-  //polymorphism
+class Birds extends Animal {
+  // Overriding the eat method in the Animal class
+  //Polymorphism
   @override
   void eat() {
-    print("Dog Eating");
+    print("birds eat");
   }
 }
 
-class Cat extends Animal {
+class Lions extends Animal {
+  // Overriding the eat method in the Animal class
+  //Polymorphism
   @override
-  //polymorphism
   void eat() {
-    print("Cat Eating");
+    print("lions eat");
   }
+}
+
+void main() {
+  Birds birds = Birds();
+  //Polymorphism
+  birds.eat();  // Output: birds eat
+
+  //Polymorphism
+  Lions lions = Lions();
+  lions.eat();  // Output: lions eat
 }
