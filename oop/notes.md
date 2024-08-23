@@ -1,13 +1,17 @@
 Relation between object
 
 1️⃣ Composition
+
 Child class depent on father class
+
 EX: if we have home class and room class
 
 لو هدينا الهوم الرووم هتتهد هى كمان معتمدين ع بعض 
 
 2️⃣ Aggregation
+
 Child class independent on father class
+
 
 لو عندى person class و player class لو ال person مات ال player مش هيموت مش مرتبطين ببعض
 
