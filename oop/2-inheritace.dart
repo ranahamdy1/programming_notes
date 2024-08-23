@@ -1,16 +1,16 @@
 class Animal {
-String _name;
-Animal(this._name);
+  String _name;
+  Animal(this._name);
 
 // Setter method
-set setName(String name) {
-  _name = name;
-}
+  set setName(String name) {
+    _name = name;
+  }
 
 // Getter method
-String get getName {
-  return _name;
-}
+  String get getName {
+    return _name;
+  }
 }
 
 class Birds extends Animal{
@@ -20,11 +20,11 @@ class Birds extends Animal{
 
 void main() {
   Animal lionName = Animal('omar');
-  print(lionName._name);
+  print(lionName.getName);
   //to update name by setter and getter
   lionName.setName = "ali";
-  print(lionName.getName);
+  print(lionName.getName);//getName not _name
 
   Birds birdsName = Birds("birds");
-  print(birdsName._name);
+  print(birdsName.getName);//getName not _name
 }
