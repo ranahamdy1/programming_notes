@@ -1,21 +1,22 @@
 class Animal {
-  String? _name;
-  // Setter method
-  set setName(String name) {
-    _name = name;
-  }
+String _name;
+Animal(this._name);
 
-  // Getter method
-  String? get getName {
-    return _name;
-  }
+// Setter method
+set setName(String name) {
+  _name = name;
+}
+
+// Getter method
+String get getName {
+  return _name;
+}
 }
 
 void main() {
-  Animal object = Animal();
-
-  // Accessing the private variable through the getter
-  Animal lionName = Animal();
-  lionName.setName = 'lion';
-  print(lionName.getName);
+  Animal object = Animal('omar');
+  print(object._name);
+  //to update name by setter and getter
+  object.setName = "ali";
+  print(object.getName);
 }
