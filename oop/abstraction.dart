@@ -1,30 +1,29 @@
 abstract class Animal {
   String _name;
   Animal(this._name);
-  // Abstract method to simulate eating behavior
+  // Abstract method
   void eat();
-  // Abstract method to simulate drinking behavior
+  // Abstract method
   void drink();
 
-  // Setter method for _name
-  set name(String name) {
+  // Setter
+  set setName(String name) {
     _name = name;
   }
-  // Getter method for _name
-  String get name {
+  // Getter
+  String get getName {
     return _name;
   }
 }
 
 class Birds extends Animal {
-  // Constructor that calls the Animal constructor with the name argument
   Birds(super.name);
-  // Implementing the abstract eat method in the Animal class
+
   @override
   void eat() {
     print("birds eat");
   }
-  // Implementing the abstract drink method in the Animal class
+
   @override
   void drink() {
     print('bird drink');
@@ -33,7 +32,7 @@ class Birds extends Animal {
 
 void main() {
   Birds birds = Birds("birds name");
-  String birdsName = birds.name;
+  String birdsName = birds.getName;
   print(birdsName);
   birds.eat();
 
