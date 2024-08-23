@@ -1,4 +1,4 @@
-- Relation between object
+Relation between object
 
 1️⃣ Composition
 Child class depent on father class
