@@ -1,46 +1,33 @@
 class Animal {
-  String _name;
-
-  Animal(this._name);
-
-  // Method to simulate eating behavior for the Animal class
+  String? _name;
+  
   void eat() {
     print("lion eat");
   }
-
   // Setter method
-  set name(String name) {
+  set setName(String name) {
     _name = name;
   }
-
   // Getter method
-  String get name {
+  String? get getName {
     return _name;
   }
 }
 
 class Birds extends Animal {
-  // Constructor that calls the Animal constructor with the name argument
-  Birds(super.name);
-
-  // Overriding the eat method in the Animal class
-  @override
-  void eat() {
-    print("birds eat");
-  }
+  //take all from Animal class //inheritance
 }
 
 void main() {
-  Animal object = Animal('omar');
-  Birds birds = Birds("birds name");
+  Animal lionName = Animal();
+  // printing through the getter
+  lionName.setName = "lion";
+  print(lionName.getName);
+  lionName.eat();
 
-  // Accessing the private variable through the getter
-  String lionName = object.name;
-  String birdsName = birds.name;
-
-  print(lionName);
-  object.eat();
-
-  print(birdsName);
-  birds.eat();
+  Birds birdsName = Birds();
+  // printing through the getter
+  birdsName.setName = "birds";
+  print(birdsName.getName);
+  birdsName.eat();
 }
