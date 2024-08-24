@@ -2,7 +2,7 @@
 
 A set of instruction that solve a specific problem (time - space).
 
-1- Sorting Algorithms (Bubble sort, Selection sort, Insertion sort, Quick Sort, Merge Sort,)
+1- Sorting Algorithms (Bubble sort, Selection sort, Insertion sort, Divide and Conquer (Merge Sort, Quick Sort))
 
 ✍🏻 Bubble sort
 بقارن كل رقمين جمب ببعض ولو عاوز ارتب تصاعدى اجيب الصغير فيهم يسار وهكذا
@@ -30,5 +30,3 @@ A set of instruction that solve a specific problem (time - space).
 4- Dynamic Programming (Knapsack Problem)
 
 5- Greedy Algorithms (Huffman Coding, Prim's Algorithm)
-
-6- Divide and Conquer (Merge Sort, Quick Sort)
