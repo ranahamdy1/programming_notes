@@ -46,3 +46,5 @@ First In First Out
 💥 *Graph*
 
 ![graph](images/graph.png)
+
+- [READ](https://www.programiz.com/dsa/data-structure-types)
