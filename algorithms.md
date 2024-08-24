@@ -26,6 +26,10 @@ A set of instruction that solve a specific problem (time - space).
 
 ![quick_sort](images/quick_sort.PNG)
 
+✍🏻 Merge sort
+
+![merge_sort](images/merge_sort.png)
+
 
 2- Search Algorithms (Binary Search, Breadth-First Search)
 
