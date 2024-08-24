@@ -14,6 +14,15 @@ A set of instruction that solve a specific problem (time - space).
 
 ![selection_sort](images/selection_sort2.png)
 
+✍🏻 Insertion sort
+
+شبه ال bubble sort بقارن كل رقمين جمب بعض والاصغر اجيبه يسار  لو ترتيب تصاعدى بس،
+ الاختلاف بقى لازم كل الجنب اليسار يكون مترتب 
+يعنى بمسك عنصرين وكمان عنصرين وارجع للعنصريين ال ف الجانب الأيسر اشوفهم تمام ولالا واكمل
+
+![insertion_sort](images/insertion_sort.jpeg)
+
+
 2- Search Algorithms (Binary Search, Breadth-First Search)
 
 3- Graph Algorithms (Dijkstra's Algorithm, A* Search)
