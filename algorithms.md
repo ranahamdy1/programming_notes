@@ -2,7 +2,7 @@
 
 A set of instruction that solve a specific problem (time - space).
 
-1- Sorting Algorithms (Bubble sort, Selection sort, Insertion sort, Divide and Conquer (Merge Sort, Quick Sort))
+1- Sorting Algorithms (Bubble sort, Selection sort, Insertion sort, Divide and Conquer (Quick Sort, Merge Sort))
 
 ✍🏻 Bubble sort
 بقارن كل رقمين جمب ببعض ولو عاوز ارتب تصاعدى اجيب الصغير فيهم يسار وهكذا
