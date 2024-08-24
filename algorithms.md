@@ -5,10 +5,14 @@ A set of instruction that solve a specific problem (time - space).
 1- Sorting Algorithms (Bubble sort, Selection sort, Insertion sort, Quick Sort, Merge Sort,)
 
 ✍🏻 Bubble sort
-
 بقارن كل رقمين جمب ببعض ولو عاوز ارتب تصاعدى اجيب الصغير فيهم يسار وهكذا
 
 ![bubble_sort](images/bubble_sort.jpeg)
+
+✍🏻 Selection sort
+نبحث عن أصغر او أكبر عنصر ثم نقوم باستبدال العنصر دا بأول عنصر
+
+![selection_sort](images/selection_sort2.png)
 
 2- Search Algorithms (Binary Search, Breadth-First Search)
 
