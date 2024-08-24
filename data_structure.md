@@ -2,7 +2,7 @@
 ![data_structure](images/dataStracture2.jpeg)
 
 
-LINEAR DATA STRUCTURES :
+⚡ LINEAR DATA STRUCTURES :
 
 👾 *Array*
 
@@ -37,8 +37,12 @@ First In First Out
 - EX: printer
 ![queue](images/queue.png)
 
-NON LINEAR DATA STRUCTURES :
+⚡ NON LINEAR DATA STRUCTURES :
 
 💥 *Tree*
 
 ![tree](images/tree.jpeg)
+
+💥 *Graph*
+
+![graph](images/graph.png)
