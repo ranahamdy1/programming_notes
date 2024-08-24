@@ -36,3 +36,9 @@ First In First Out
 - enqueue - dequeue - getFront
 - EX: printer
 ![queue](images/queue.png)
+
+NON LINEAR DATA STRUCTURES :
+
+💥 *Tree*
+
+![tree](images/tree.jpeg)
