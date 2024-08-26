@@ -4,6 +4,8 @@ A set of instruction that solve a specific problem (time - space).
 
 1- Sorting Algorithms (Bubble sort, Selection sort, Insertion sort, Divide and Conquer (Quick Sort, Merge Sort))
 
+![bubble_sort](images/sorting_algorithms.png)
+
 ✍🏻 Bubble sort
 بقارن كل رقمين جمب ببعض ولو عاوز ارتب تصاعدى اجيب الصغير فيهم يسار وهكذا
 
@@ -17,7 +19,7 @@ A set of instruction that solve a specific problem (time - space).
 ✍🏻 Insertion sort
 بقسم الليست الي جزئين جزء مرتب وجزء غير مرتب يتم اخد كل عنصر من الجزء غير المرتب وادخاله فى المكان المناسب داخل الجزء المرتب
 
-![insertion_sort](images/insertion_sort.jpeg)
+![insertion_sort](images/insertion_sort.jpg)
 
 ✍🏻 Quick sort
 
