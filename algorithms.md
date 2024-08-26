@@ -30,6 +30,12 @@ A set of instruction that solve a specific problem (time - space).
 بمشى علي الليست عنصر عنصر لحد ما الاقى العنصر المطلوب
 ![linear_search](images/linear_search.jpeg)
 
+✍🏻 Binary Search : 
+
+- بتتعامل مع sorting list 
+- بمسك العناصر من النص لو العنصر المطلوب البحث عنه اكبر من العنصر ال فى النص والعناصر مترتبه همسح كل العناصر ال علي اليسار وابحث عن العنصر فى الجانب الايمين
+![binary_search](images/binary_search.png)
+
 3- Graph Algorithms (Dijkstra's Algorithm, A* Search)
 
 4- Dynamic Programming (Knapsack Problem)
