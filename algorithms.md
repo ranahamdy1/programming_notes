@@ -4,30 +4,24 @@ A set of instruction that solve a specific problem (time - space).
 
 1- Sorting Algorithms (Bubble sort, Selection sort, Insertion sort, Divide and Conquer (Quick Sort, Merge Sort))
 
-![bubble_sort](images/sorting_algorithms.png)
-
-✍🏻 Bubble sort
+✍🏻 Bubble sort :
 بقارن كل رقمين جمب ببعض ولو عاوز ارتب تصاعدى اجيب الصغير فيهم يسار وهكذا
 
-![bubble_sort](images/bubble_sort.jpeg)
-
-✍🏻 Selection sort
+✍🏻 Selection sort :
 نبحث عن أصغر او أكبر عنصر ثم نقوم باستبدال العنصر دا بأول عنصر
 
-![selection_sort](images/selection_sort2.png)
-
-✍🏻 Insertion sort
+✍🏻 Insertion sort :
 بقسم الليست الي جزئين جزء مرتب وجزء غير مرتب يتم اخد كل عنصر من الجزء غير المرتب وادخاله فى المكان المناسب داخل الجزء المرتب
 
-![insertion_sort](images/insertion_sort.jpg)
+✍🏻 Quick sort :
 
-✍🏻 Quick sort
+ يتم اختيار عنصر محوري (pivot) وتقسيم القائمة إلى جزئين: جزء يحتوي على العناصر الأصغر من المحور والآخر على العناصر الأكبر. يتم ترتيب الجزئين بشكل منفصل.
 
-![quick_sort](images/quick_sort.PNG)
+✍🏻 Merge sort :
+يتم تقسيم القائمة إلى نصفين، ويتم ترتيب كل نصف بشكل منفصل ثم دمجهما مرة أخرى.
 
-✍🏻 Merge sort
+![bubble_sort](images/sorting_algorithms.png)
 
-![merge_sort](images/merge_sort.png)
 
 
 2- Search Algorithms (Binary Search, Breadth-First Search)
