@@ -36,6 +36,14 @@ A set of instruction that solve a specific problem (time - space).
 - بمسك العناصر من النص لو العنصر المطلوب البحث عنه اكبر من العنصر ال فى النص والعناصر مترتبه همسح كل العناصر ال علي اليسار وابحث عن العنصر فى الجانب الايمين
 ![binary_search](images/binary_search.png)
 
+✍🏻 Breadth-First Search (BFS) :
+
+
+- بمشى undirected gram 
+- no circle
+
+![bfs](images/bfs2.png)
+
 3- Graph Algorithms (Dijkstra's Algorithm, A* Search)
 
 4- Dynamic Programming (Knapsack Problem)
