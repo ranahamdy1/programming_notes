@@ -20,11 +20,15 @@ A set of instruction that solve a specific problem (time - space).
 ✍🏻 Merge sort :
 يتم تقسيم القائمة إلى نصفين، ويتم ترتيب كل نصف بشكل منفصل ثم دمجهما مرة أخرى.
 
-![bubble_sort](images/sorting_algorithms.png)
+![sorting_algorithms](images/sorting_algorithms.png)
 
 
 
-2- Search Algorithms (Binary Search, Breadth-First Search)
+2- Search Algorithms (Linear Search, Binary Search, Breadth-First Search (BFS), Depth-First Search (DFS))
+
+✍🏻 Linear Search
+بمشى علي الليست عنصر عنصر لحد ما الاقى العنصر المطلوب
+![linear_search](images/linear_search.jpeg)
 
 3- Graph Algorithms (Dijkstra's Algorithm, A* Search)
 
