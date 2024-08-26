@@ -42,8 +42,10 @@ A set of instruction that solve a specific problem (time - space).
 
 ![bfs_and_dfs](images/bfs_and_dfs.jpg)
 
-
 3- Graph Algorithms (Dijkstra's Algorithm, A* Search)
+
+✍🏻  Dijkstra's Algorithm :  is used to find the shortest paths between nodes in a graph.
+![Dijkstra's Algorithm](images/Dijkstra's_Algorithm.png)
 
 4- Dynamic Programming (Knapsack Problem)
 
