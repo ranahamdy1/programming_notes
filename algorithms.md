@@ -36,13 +36,12 @@ A set of instruction that solve a specific problem (time - space).
 - بمسك العناصر من النص لو العنصر المطلوب البحث عنه اكبر من العنصر ال فى النص والعناصر مترتبه همسح كل العناصر ال علي اليسار وابحث عن العنصر فى الجانب الايمين
 ![binary_search](images/binary_search.png)
 
-✍🏻 Breadth-First Search (BFS) :
+✍🏻 Breadth-First Search (BFS)
 
+✍🏻  Depth-First Search (DFS)
 
-- بمشى undirected gram 
-- no circle
+![bfs_and_dfs](images/bfs_and_dfs.jpg)
 
-![bfs](images/bfs2.png)
 
 3- Graph Algorithms (Dijkstra's Algorithm, A* Search)
 
