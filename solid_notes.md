@@ -1,4 +1,5 @@
 SOLID
+![solid](images/solid.jpeg)
 
 1️⃣ S => Single responsibility 
 - class should solve only one problem
@@ -32,7 +33,8 @@ SOLID
 
 كل من ال high و low class لا يعتمدون علي بعض بل يعتمدون علي abstraction
 
-![solid](images/solid.jpeg)
+
 
 - [SOLID IN DART](https://dev.to/lionnelt/solid-principles-in-dartflutter-2g21)
 - [SOLID IN FLUTTER](https://medium.com/nerd-for-tech/solid-principles-in-a-flutter-32eaf7218476)
+- [youtube](https://youtube.com/playlist?list=PLYOFAmhj26B_WvbghzzHTkokHmx7G-AEr&si=IMUFaguEheT0ZhcY)
