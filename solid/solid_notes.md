@@ -2,6 +2,11 @@ SOLID
 
 1️⃣ S => Single responsibility 
 - class should solve only one problem
+
+-ال single responsibility كل كلاس له مسئوليه واحده مش لازم ميثود واحده .
+يعنى مثلا لو عندنا كلاس اسمه BasicAnimalShare كده ممكن يكون فيه داله للمشى وداله للأكل علشان دا كده مسؤليه واحده او دول حسب اسم الفانكشن حاجه واحده .
+
+⚡ وفى مثال فى interface segmentation يوضح الجزء دا
   
 2️⃣ O => Open closed principle 
 - class should Open for extension closed for modification
