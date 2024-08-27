@@ -36,16 +36,19 @@ A set of instruction that solve a specific problem (time - space).
 - بمسك العناصر من النص لو العنصر المطلوب البحث عنه اكبر من العنصر ال فى النص والعناصر مترتبه همسح كل العناصر ال علي اليسار وابحث عن العنصر فى الجانب الايمين
 ![binary_search](images/binary_search.png)
 
-✍🏻 Breadth-First Search (BFS)
+✍🏻  Depth-First Search (DFS)   
 
-✍🏻  Depth-First Search (DFS)
+✍🏻 Breadth-First Search (BFS)
 
 ![bfs_and_dfs](images/bfs_and_dfs.jpg)
 
 3- Graph Algorithms (Dijkstra's Algorithm, A* Search)
 
 ✍🏻  Dijkstra's Algorithm :  is used to find the shortest paths between nodes in a graph.
-![Dijkstra's Algorithm](images/Dijkstra's_Algorithm.png)
+
+✍🏻  A* Search : is a graph traversal and pathfinding algorithm that is used to find the shortest path between a starting node and a target node. It uses a heuristic t
+
+![two_algo](images/two_algo.png)
 
 4- Dynamic Programming (Knapsack Problem)
 
