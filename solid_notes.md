@@ -2,6 +2,13 @@ SOLID
 
 1️⃣ S => Single responsibility 
 - class should solve only one problem
+
+مثلا لو عندى مستشفى المستشفى دى فيها دكتور واحد بيعالج كل الامراض ذى البرد ، الكلي ، القلب وغيره 
+هل دا صح ؟؟
+لا غلط لو الدكتور غاب المستشفى كلها مش هتشتغل 
+طب لو جبنا دكاتره كتير كل دكتور بيعالج مرض واحد كده الصح 
+فلو دكتور فيهم غاب عادى الباقى شغال 
+دى نفس الفكره كل كلاس بيقوم بحاجه واحده بس .
   
 2️⃣ O => Open closed principle 
 - class should Open for extension closed for modification
