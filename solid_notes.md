@@ -1,5 +1,4 @@
 SOLID
-![solid](images/solid.jpeg)
 
 1️⃣ S => Single responsibility 
 - class should solve only one problem
@@ -38,9 +37,11 @@ SOLID
 
 5️⃣ D => Dependency Inversion
 
-كل من ال high و low class لا يعتمدون علي بعض بل يعتمدون علي abstraction
+- ال high level لا يعتمد علي ال low level بل هما الاتنين يعتمدون علي abstract class
+- مثلا لو عندى كلاس فيه داله جمع وكلاس تانى فيه داله طرح وكلاس تالت بعمل object من الكلاسين دول وبستخدمهم فيه كده الكلاس التالت هو ال high class والكلاسين الاولانين دول low class فكده الكلاس التالت ال high بيعتمد علي ال low class الاولانين كده غلط ❌ علشان لو حصل تعديل فيهم هيأثر علي الكلاس ال high 
+فلازم بقى نعمل abstract  class نسميه CalcOperation مثلا ونخلي ال low level class يورثو منه
 
-
+![solid](images/solid.jpeg)
 
 - [SOLID IN DART](https://dev.to/lionnelt/solid-principles-in-dartflutter-2g21)
 - [SOLID IN FLUTTER](https://medium.com/nerd-for-tech/solid-principles-in-a-flutter-32eaf7218476)
