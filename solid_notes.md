@@ -43,6 +43,6 @@ SOLID
 
 ![solid](images/solid.jpeg)
 
-- [SOLID IN DART](https://dev.to/lionnelt/solid-principles-in-dartflutter-2g21)
-- [SOLID IN FLUTTER](https://medium.com/nerd-for-tech/solid-principles-in-a-flutter-32eaf7218476)
-- [youtube](https://youtube.com/playlist?list=PLYOFAmhj26B_WvbghzzHTkokHmx7G-AEr&si=IMUFaguEheT0ZhcY)
+- [READ](https://dev.to/lionnelt/solid-principles-in-dartflutter-2g21)
+- [READ](https://medium.com/nerd-for-tech/solid-principles-in-a-flutter-32eaf7218476)
+- [YOYRUBE](https://youtube.com/playlist?list=PLYOFAmhj26B_WvbghzzHTkokHmx7G-AEr&si=IMUFaguEheT0ZhcY)
