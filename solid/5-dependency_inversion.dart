@@ -17,7 +17,7 @@ class Circle implements CalcOperation {
 }
 
 class Calculator {
-  final List<CalcOperation> operations;
+  final List<CalcOperation> operations; //dependency injection
   Calculator(this.operations);
 
   void performCalculations() {
