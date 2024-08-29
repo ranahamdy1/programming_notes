@@ -1,4 +1,4 @@
-⚡ Dependency injection
+⚡1- Dependency injection
 
 دا نفس فكره ان اعمل object بس بطريقه تانيه مثلا لو عندى كلاس اسمه Dependency 
 وعندى كلاس تانى اسمه Service 
@@ -27,3 +27,5 @@ class Service {
 
   Service(this.dependency);
 }
+
+-------------------------------------------------------------------------------------
