@@ -10,13 +10,13 @@ class UsbPort {
   }
 }
 
+// Adapter class
 class LightningToUsbAdapter implements LightningPort {
   UsbPort usbPort;
-
   LightningToUsbAdapter(this.usbPort);
 
   @override
   void connectLightning() {
-    usbPort.connectUsb();
+    usbPort.connectUsb();  // Adapting the UsbPort method to LightningPort
   }
 }
