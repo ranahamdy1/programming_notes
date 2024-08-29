@@ -42,3 +42,8 @@ class Obese implements Bmi {
     print("Obese");
   }
 }
+
+void main() {
+  Bmi bmi1 = Bmi(22.0);
+  bmi1.bmiCalc();
+}
