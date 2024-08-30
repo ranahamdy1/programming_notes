@@ -2,7 +2,7 @@
 
 مجموعه من البيانات يتم ترتيبها بشكل مرتب منظم لكى نصل إليها بسهوله ونقدر نعدلها عليها بسهوله 
 
-DBMS :
+DBMS (Database Management Systems) :
 
 1- Relational DB (SQL server)
 
