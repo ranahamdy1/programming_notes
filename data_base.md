@@ -8,7 +8,7 @@ DBMS :
 
 2- Non Relational DB ( NoSQL)
 
-EX :
+EX (SQL):
 
 ![db1](images/db1.jpeg)
 ![db2](images/db2.jpeg)
