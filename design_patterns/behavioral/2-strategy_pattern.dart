@@ -1,4 +1,3 @@
-// واجهة الاستراتيجية
 abstract class TaxStrategy {
   double calculateTax(double amount);
 }
@@ -19,7 +18,6 @@ class PremiumTaxStrategy implements TaxStrategy {
   }
 }
 
-// الفئة التي تستخدم الاستراتيجية
 class TaxContext {
   TaxStrategy _strategy;
 
