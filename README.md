@@ -3,10 +3,10 @@
 This repository contains code and notes on various technical concepts implemented in Dart language. Below is the structure of the repository and its contents:
 
 ## 1. Algorithms
-- **Description:** Implementation of various algorithms.
+- **Description** of various algorithms.
 
 ## 2. Data Structures
-- **Description:** Implementation of common data structures.
+- **Description** of common data structures.
 
 ## 3. Database
 - **Description:** Code related to database interactions and implementations.
