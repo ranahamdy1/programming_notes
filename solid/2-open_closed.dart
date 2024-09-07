@@ -3,12 +3,11 @@ import 'dart:math';
 // Abstract class 'Shape' defines a common interface for all shapes.
 // This design is open for extension but closed for modification.
 abstract class Shape {
-  // Method 'area' must be implemented by all shapes.
   double area();
 }
 
-// 'Rectangle' implements 'Shape', providing a specific implementation for rectangles.
-// Adding new shapes (e.g., Triangle, Polygon, Circle) does not require modification to this class.
+// Open closed principle
+// Adding new shapes (Triangle, Polygon, Circle,...) does not require modification to this class.
 class Rectangle implements Shape {
   double? width; 
   double? height;
@@ -19,8 +18,8 @@ class Rectangle implements Shape {
   }
 }
 
-// 'Circle' implements 'Shape', providing a specific implementation for circles.
-// Adding new shapes (e.g., Triangle, Polygon) does not require modification to this class.
+// Open closed principle
+// Adding new shapes (Triangle, Polygon,...) does not require modification to this class.
 class Circle implements Shape {
   double? radius; 
 
