@@ -37,22 +37,18 @@ final Dependency  dependency ;
 -وفى مثال عليه فى Dependency inversion code
 
 EX:
-
+```
 class Dependency {
-
   void dependency(){
-  
     print("dependency");
   }
 }
 
 class Service {
-
   final Dependency dependency;   //dependency injection
-
   Service(this.dependency);
 }
-
+```
 -------------------------------------------------------------------------------------
 
 ⚡3- 
