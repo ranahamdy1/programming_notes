@@ -16,6 +16,8 @@ class Circle implements CalcOperation {
   }
 }
 
+//Dependency Inversion
+//The Calculator class depends on the abstraction CalcOperation rather than concrete implementations like Rectangle or Circle.
 class Calculator {
   final List<CalcOperation> operations; //dependency injection
   Calculator(this.operations);
