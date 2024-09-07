@@ -1,10 +1,12 @@
 class Bird {
-  void eat(){
+  void eat() {
     print("bird is eating");
   }
 }
 
-class FlyingBirds extends Bird{
+// Class 'FlyingBirds' extends 'Bird' to represent birds that can fly.
+// Inherits the 'eat' method from 'Bird' and adds additional behavior for flying.
+class FlyingBirds extends Bird {
   void fly() {
     print("bird is flying");
   }
@@ -12,10 +14,13 @@ class FlyingBirds extends Bird{
 
 class Penguin extends Bird {
   @override
-  void eat(){
+  void eat() {
     print("penguin is eating");
   }
 }
+
+// Class 'Swan' extends 'FlyingBirds' and provides specific implementations for flying and eating.
+//so child Class 'FlyingBirds' can do what parent class 'Bird' do.
 
 class Swan extends FlyingBirds {
   @override
@@ -24,7 +29,7 @@ class Swan extends FlyingBirds {
   }
 
   @override
-  void eat(){
+  void eat() {
     print("Swan is eating");
   }
 }
