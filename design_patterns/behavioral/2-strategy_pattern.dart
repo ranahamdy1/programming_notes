@@ -1,47 +1,112 @@
-abstract class TaxStrategy {
-  double calculateTax(double amount);
+// Step 1: Define the Strategy Interfaces
+abstract class FlyBehavior {
+  void fly();
 }
 
-// استراتيجية الضرائب للزبائن العاديين
-class RegularTaxStrategy implements TaxStrategy {
+abstract class QuackBehavior {
+  void quack();
+}
+
+// Step 2: Implement Concrete Strategies for FlyBehavior
+class FlyWithWings implements FlyBehavior {
   @override
-  double calculateTax(double amount) {
-    return amount * 0.10; // 10% ضريبة
+  void fly() {
+    print("Flying with wings!");
   }
 }
 
-// استراتيجية الضرائب للزبائن المميزين
-class PremiumTaxStrategy implements TaxStrategy {
+class FlyNoWay implements FlyBehavior {
   @override
-  double calculateTax(double amount) {
-    return amount * 0.05; // 5% ضريبة
+  void fly() {
+    print("I can't fly.");
   }
 }
 
-class TaxContext {
-  TaxStrategy _strategy;
-
-  TaxContext(this._strategy);
-
-  void setStrategy(TaxStrategy strategy) {
-    _strategy = strategy;
-  }
-
-  double calculate(double amount) {
-    return _strategy.calculateTax(amount);
+// Step 3: Implement Concrete Strategies for QuackBehavior
+class Quack implements QuackBehavior {
+  @override
+  void quack() {
+    print("Quack!");
   }
 }
 
+class Squeak implements QuackBehavior {
+  @override
+  void quack() {
+    print("Squeak!");
+  }
+}
+
+class MuteQuack implements QuackBehavior {
+  @override
+  void quack() {
+    print("...");
+  }
+}
+
+// Step 4: Create the Duck Class (Context)
+abstract class Duck {
+  FlyBehavior flyBehavior;
+  QuackBehavior quackBehavior;
+
+  Duck({required this.flyBehavior, required this.quackBehavior});
+
+  void performFly() {
+    flyBehavior.fly();
+  }
+
+  void performQuack() {
+    quackBehavior.quack();
+  }
+
+  void swim() {
+    print("All ducks float, even decoys!");
+  }
+
+  // You can change the behavior at runtime
+  void setFlyBehavior(FlyBehavior fb) {
+    flyBehavior = fb;
+  }
+
+  void setQuackBehavior(QuackBehavior qb) {
+    quackBehavior = qb;
+  }
+
+  void display();
+}
+
+// Step 5: Implement Specific Duck Types
+class MallardDuck extends Duck {
+  MallardDuck(): super(flyBehavior: FlyWithWings(), quackBehavior: Quack());
+
+  @override
+  void display() {
+    print("I'm a real Mallard duck.");
+  }
+}
+
+class RubberDuck extends Duck {
+  RubberDuck(): super(flyBehavior: FlyNoWay(), quackBehavior: Squeak());
+
+  @override
+  void display() {
+    print("I'm a rubber duckie.");
+  }
+}
+
+// Step 6: Test the Strategy Pattern
 void main() {
-  double amount = 1000.0;
+  Duck mallard = MallardDuck();
+  mallard.display();
+  mallard.performFly();
+  mallard.performQuack();
 
-  // حساب الضرائب باستخدام الاستراتيجية العادية
-  var context = TaxContext(RegularTaxStrategy());
-  double regularTax = context.calculate(amount);
-  print('Regular Tax: \$${regularTax}');
+  Duck rubberDuck = RubberDuck();
+  rubberDuck.display();
+  rubberDuck.performFly();
+  rubberDuck.performQuack();
 
-  // تغيير الاستراتيجية لحساب الضرائب للزبائن المميزين
-  context.setStrategy(PremiumTaxStrategy());
-  double premiumTax = context.calculate(amount);
-  print('Premium Tax: \$${premiumTax}');
+  // Change behavior at runtime
+  rubberDuck.setFlyBehavior(FlyWithWings());
+  rubberDuck.performFly();
 }
