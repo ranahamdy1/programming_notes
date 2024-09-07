@@ -1,12 +1,15 @@
+// Interface for basic animal behaviors.
 abstract class Animal {
   void eat();
   void drink();
 }
 
+// Interface for flying animals with specific flying behavior.
 abstract class FlyingAnimal {
   void fly();
 }
 
+// Interface for walking animals with specific walking behavior.
 abstract class WalkingAnimal {
   void walk();
 }
