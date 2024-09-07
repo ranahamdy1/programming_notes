@@ -8,6 +8,6 @@
 ## 5- Object Oriented Programming (OOP).
 ## 6- Application Programming Interface (API).
 ## 7- Design Patterns (In Progress).
-## 8- General Notes Like (Dependency injection,.......)
+## 8- General Notes Like (Dependency injection,.......).
 
 ![rubber_duck](images/rubber_duck.png)
