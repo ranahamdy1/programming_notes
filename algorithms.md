@@ -1,8 +1,8 @@
-⚡ *Algorithms*
+## ⚡ *Algorithms*
 
 A set of instruction that solve a specific problem (time - space).
 
-1- Sorting Algorithms (Bubble sort, Selection sort, Insertion sort, Divide and Conquer (Quick Sort, Merge Sort))
+### 1- Sorting Algorithms (Bubble sort, Selection sort, Insertion sort, Divide and Conquer (Quick Sort, Merge Sort))
 
 ✍🏻 Bubble sort :
 بقارن كل رقمين جمب ببعض ولو عاوز ارتب تصاعدى اجيب الصغير فيهم يسار وهكذا
@@ -24,7 +24,7 @@ A set of instruction that solve a specific problem (time - space).
 
 
 
-2- Search Algorithms (Linear Search, Binary Search, Breadth-First Search (BFS), Depth-First Search (DFS))
+### 2- Search Algorithms (Linear Search, Binary Search, Breadth-First Search (BFS), Depth-First Search (DFS))
 
 ✍🏻 Linear Search
 بمشى علي الليست عنصر عنصر لحد ما الاقى العنصر المطلوب
@@ -42,7 +42,7 @@ A set of instruction that solve a specific problem (time - space).
 
 ![bfs_and_dfs](images/bfs_and_dfs.jpg)
 
-3- Graph Algorithms (Dijkstra's Algorithm, A* Search)
+### 3- Graph Algorithms (Dijkstra's Algorithm, A* Search)
 
 ✍🏻  Dijkstra's Algorithm :  is used to find the shortest paths between nodes in a graph.
 
@@ -50,6 +50,6 @@ A set of instruction that solve a specific problem (time - space).
 
 ![two_algo](images/two_algo.png)
 
-4- Dynamic Programming (Knapsack Problem)
+### 4- Dynamic Programming (Knapsack Problem)
 
-5- Greedy Algorithms (Huffman Coding, Prim's Algorithm)
+### 5- Greedy Algorithms (Huffman Coding, Prim's Algorithm)
