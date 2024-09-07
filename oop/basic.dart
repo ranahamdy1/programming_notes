@@ -12,10 +12,12 @@ void main(){
   print(customer.age);
 }
 
-//--------------------------------------------------------
+//------------------------------------------------------------------------
 
+/*
 // constructor types
 
+//class
 class Customer {
   String? name;
   int? age;
@@ -32,11 +34,15 @@ class Customer {
   Customer.namedConstructor(this.name, this.age);
 }
 
+void main() {
+//Object
 // Object instantiation using parameterized constructor
 var customer = Customer("JO", 22);
+print(customer.age);
 
 // Object instantiation using named constructor
 var namedCustomer = Customer.namedConstructor("JO", 22);
-
+print(namedCustomer.age);
+  
 // This code has an error because Default and Parameterized constructor can not come with each other
-
+}*/
