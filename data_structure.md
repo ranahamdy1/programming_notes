@@ -1,10 +1,10 @@
-*Data Structure*
+# *Data Structure*
 ![data_structure](images/dataStracture2.jpeg)
 
 
-⚡ LINEAR DATA STRUCTURES :
+## ⚡ LINEAR DATA STRUCTURES :
 
-👾 *Array*
+### 👾 *Array*
 
 List (is a collection of item take the same type)
 - fixed size 
@@ -13,7 +13,7 @@ List (is a collection of item take the same type)
 ![array](images/array1.png)
 
 
-👾 *Linked List*
+### 👾 *Linked List*
 
 like Array but 
 - dynamic size
@@ -21,7 +21,7 @@ like Array but
 ![linked_list](images/linked_list.PNG)
 
 
-👾 *STACK* (LIFO)
+### 👾 *STACK* (LIFO)
 Last In First Out
 - [top]
 - push - pop - getTop - isEmpty
@@ -30,20 +30,20 @@ Last In First Out
 ![stack](images/stack.png)
 
 
-👾 *QUEUE* (FIFO)
+### 👾 *QUEUE* (FIFO)
 First In First Out
 - The first called front, the last called rear
 - enqueue - dequeue - getFront
 - EX: printer
 ![queue](images/queue.png)
 
-⚡ NON LINEAR DATA STRUCTURES :
+## ⚡ NON LINEAR DATA STRUCTURES :
 
-💥 *Tree*
+### 💥 *Tree*
 
 ![tree](images/tree.jpeg)
 
-💥 *Graph*
+### 💥 *Graph*
 
 ![graph](images/graph.png)
 
