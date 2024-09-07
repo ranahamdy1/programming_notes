@@ -1,4 +1,4 @@
-Design Patterns: 
+# Design Patterns: 
 
 
 حلول عامه لمجموعه مشاكل شائعه واجهت الناس قبل كده
@@ -8,7 +8,7 @@ Design Patterns:
 ![design_patterns](images/design_patternes.jpeg)
 
 
-1- Creational >>إنشاء 
+## 1- Creational >> إنشاء 
 
 (how to create an object or class )
 
@@ -16,13 +16,13 @@ Design Patterns:
 
 -مثلا لو عندى class وعايزه اعمل منه نسخه 
 
-2-  Structural >>علاقات
+## 2-  Structural >>علاقات
 
 دا بيهتم <بالعلاقات> بين ال class وبعضها وبين ال objects وبعضها
 
 -يعنى العلاقه بين two screens  مثلا 
 
-3- Behavioral >>سلوك
+## 3- Behavioral >>سلوك
 
 السلوك بتاع ال object او ال class
 
