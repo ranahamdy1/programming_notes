@@ -21,7 +21,6 @@ class Penguin extends Bird {
 
 // Class 'Swan' extends 'FlyingBirds' and provides specific implementations for flying and eating.
 //so child Class 'FlyingBirds' can do what parent class 'Bird' do.
-
 class Swan extends FlyingBirds {
   @override
   void fly() {
