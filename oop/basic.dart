@@ -13,24 +13,30 @@ void main(){
 }
 
 //--------------------------------------------------------
-/*
-//class
+
+// constructor types
+
 class Customer {
   String? name;
   int? age;
 
-  //Default constructor
-  defaultCustomer(){
+  // Default constructor
+  Customer() {
     print("default constructor");
   }
-  //Parameterized constructor
-  Customer(String this.name, int this.age);
-  //Named constructor
-  Customer.namedConstructor(String this.name, int this.age);
+
+  // Parameterized constructor
+  Customer(this.name, this.age);
+
+  // Named constructor
+  Customer.namedConstructor(this.name, this.age);
 }
 
-//object
+// Object instantiation using parameterized constructor
 var customer = Customer("JO", 22);
 
-// Default and Parameterized constructor can not come with each other
-*/
+// Object instantiation using named constructor
+var namedCustomer = Customer.namedConstructor("JO", 22);
+
+// This code has an error because Default and Parameterized constructor can not come with each other
+
