@@ -20,7 +20,7 @@ class NewsPublisher {
   }
 }
 
-// Observer >> تمثل الكائنات التي ترغب في تلقي التحديثات من
+// Observer >> تمثل الكائنات التي ترغب في تلقي التحديثات 
 abstract class Observer {
   void update(String news);
 }
