@@ -1,13 +1,7 @@
-// Step 1: Define the Strategy Interfaces
 abstract class FlyBehavior {
   void fly();
 }
 
-abstract class QuackBehavior {
-  void quack();
-}
-
-// Step 2: Implement Concrete Strategies for FlyBehavior
 class FlyWithWings implements FlyBehavior {
   @override
   void fly() {
@@ -22,62 +16,23 @@ class FlyNoWay implements FlyBehavior {
   }
 }
 
-// Step 3: Implement Concrete Strategies for QuackBehavior
-class Quack implements QuackBehavior {
-  @override
-  void quack() {
-    print("Quack!");
-  }
-}
-
-class Squeak implements QuackBehavior {
-  @override
-  void quack() {
-    print("Squeak!");
-  }
-}
-
-class MuteQuack implements QuackBehavior {
-  @override
-  void quack() {
-    print("...");
-  }
-}
-
-// Step 4: Create the Duck Class (Context)
 abstract class Duck {
   FlyBehavior flyBehavior;
-  QuackBehavior quackBehavior;
-
-  Duck({required this.flyBehavior, required this.quackBehavior});
+  Duck({required this.flyBehavior});
 
   void performFly() {
     flyBehavior.fly();
-  }
-
-  void performQuack() {
-    quackBehavior.quack();
   }
 
   void swim() {
     print("All ducks float, even decoys!");
   }
 
-  // You can change the behavior at runtime
-  void setFlyBehavior(FlyBehavior fb) {
-    flyBehavior = fb;
-  }
-
-  void setQuackBehavior(QuackBehavior qb) {
-    quackBehavior = qb;
-  }
-
-  void display();
+  void display(); // يظل هذا مجردًا لأن كل نوع من البطات له مظهر مختلف
 }
 
-// Step 5: Implement Specific Duck Types
 class MallardDuck extends Duck {
-  MallardDuck(): super(flyBehavior: FlyWithWings(), quackBehavior: Quack());
+  MallardDuck(): super(flyBehavior: FlyWithWings());
 
   @override
   void display() {
@@ -86,7 +41,7 @@ class MallardDuck extends Duck {
 }
 
 class RubberDuck extends Duck {
-  RubberDuck(): super(flyBehavior: FlyNoWay(), quackBehavior: Squeak());
+  RubberDuck(): super(flyBehavior: FlyNoWay());
 
   @override
   void display() {
@@ -94,19 +49,70 @@ class RubberDuck extends Duck {
   }
 }
 
-// Step 6: Test the Strategy Pattern
 void main() {
   Duck mallard = MallardDuck();
-  mallard.display();
-  mallard.performFly();
-  mallard.performQuack();
+  mallard.display();  // يعرض نوع البطة
+  mallard.performFly();  // ينفذ سلوك الطيران
 
   Duck rubberDuck = RubberDuck();
-  rubberDuck.display();
-  rubberDuck.performFly();
-  rubberDuck.performQuack();
+  rubberDuck.display();  // يعرض نوع البطة
+  rubberDuck.performFly();  // ينفذ سلوك الطيران
 
-  // Change behavior at runtime
-  rubberDuck.setFlyBehavior(FlyWithWings());
+  // تغيير سلوك الطيران في وقت التشغيل
+  rubberDuck.flyBehavior = FlyWithWings();
   rubberDuck.performFly();
 }
+
+//---------------------------------------------------------------------------------------------
+
+//another example
+
+// Strategy Interface
+abstract class PaymentStrategy {
+  void pay(double amount);
+}
+
+// Concrete Strategies
+class CreditCardPayment implements PaymentStrategy {
+  @override
+  void pay(double amount) {
+    print('Paying $amount using Credit Card.');
+  }
+}
+
+class PayPalPayment implements PaymentStrategy {
+  @override
+  void pay(double amount) {
+    print('Paying $amount using PayPal.');
+  }
+}
+
+// Context
+class ShoppingCart {
+  PaymentStrategy? paymentStrategy;
+
+  void setPaymentStrategy(PaymentStrategy strategy) {
+    paymentStrategy = strategy;
+  }
+
+  void checkout(double amount) {
+    if (paymentStrategy != null) {
+      paymentStrategy!.pay(amount);
+    } else {
+      print('No payment strategy selected.');
+    }
+  }
+}
+
+// Usage
+/*void main() {
+  ShoppingCart cart = ShoppingCart();
+
+  // Use Credit Card Payment
+  cart.setPaymentStrategy(CreditCardPayment());
+  cart.checkout(100.0);
+
+  // Switch to PayPal Payment
+  cart.setPaymentStrategy(PayPalPayment());
+  cart.checkout(200.0);
+}*/
