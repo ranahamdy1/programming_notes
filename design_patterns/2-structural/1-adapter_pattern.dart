@@ -3,14 +3,14 @@
 //Lightning فئة تدعم منفذ 
 class LightningPort {
   void connectLightning() {
-    print("تم الاتصال عبر منفذ Lightning");
+    print(" Lightning تم الاتصال عبر منفذ ");
   }
 }
 
 //USB فئة تدعم منفذ 
 class UsbPort {
   void connectUsb() {
-    print("تم الاتصال عبر منفذ USB");
+    print(" USB تم الاتصال عبر منفذ ");
   }
 }
 
@@ -31,6 +31,6 @@ void main() {
   UsbPort usbPort = UsbPort();
   LightningPort lightningPort = LightningToUsbAdapter(usbPort);
 
-  lightningPort.connectLightning(); // "تم الاتصال عبر منفذ USB" :ستطبع 
+  lightningPort.connectLightning(); //ستطبع: " USB تم الاتصال عبر منفذ " 
 }
 
