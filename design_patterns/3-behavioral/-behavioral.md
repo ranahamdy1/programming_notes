@@ -15,6 +15,7 @@ Explain the example:
 ## ⚡2- Observer Pattern
 
 - (المراقب): مراقبه الاخرين والاستجابه للتغيرات عند حدوثها
+- Notification
 
 مثال:
 
