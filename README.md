@@ -25,7 +25,7 @@ This repository contains code and notes on various technical concepts implemente
 - **Description:** Implementation and usage of APIs in Dart.
 
 ## 7. Design Patterns
-- **Description:** This section is currently in progress. It will include explanations and implementations of various design patterns.
+- **Description:** This section is currently in progress🚀. It will include explanations and implementations of various design patterns.
 - **Explanation File:** `design_patterns.md` 
 - **Code Location:** `design_patterns/` folder (currently under development)
 
@@ -35,7 +35,7 @@ This repository contains code and notes on various technical concepts implemente
 - **Description:** General notes and additional topics such as Dependency Injection.
 - **Notes Location:** `general_notes.md`
 
-**Note:**  This section is always in progress, Stay tuned for updates as we work on adding detailed explanations and code examples.
+**Note:**  This section is always in progress⚡, Stay tuned for updates as we work on adding detailed explanations and code examples.
 
 ## Getting Started
 1. Clone the repository.
