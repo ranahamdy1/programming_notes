@@ -1,3 +1,4 @@
+// NewsPublisher (Subject) >> يملك البيانات التي تتغير
 class NewsPublisher {
   List<Observer> _observers = [];
 
@@ -19,12 +20,12 @@ class NewsPublisher {
   }
 }
 
-// الواجهة للمراقبين
+// Observer >> تمثل الكائنات التي ترغب في تلقي التحديثات من
 abstract class Observer {
   void update(String news);
 }
 
-// مراقب محدد
+// NewsSubscriber (Concrete Observer) >> مراقب محدد يتم إشعاره بكل خبر جديد يتم نشره
 class NewsSubscriber implements Observer {
   final String name;
   NewsSubscriber(this.name);
@@ -45,6 +46,7 @@ void main() {
   newsPublisher.addObserver(subscriber1);
   newsPublisher.addObserver(subscriber2);
 
-  // نشر خبر جديد
+  // نشر خبر جديد وسيتم إشعار جميع المراقبين بهذا الخبر
+  // "Breaking News!" خبر جديد بعنوان 
   newsPublisher.notifyObservers('Breaking News!');
 }
