@@ -49,4 +49,10 @@ class Service {
 }
 ```
 
-## ⚡3- 
+## ⚡3- Some Principle
+1- YAGNI (You Aren't Gonna Need It)
+- is a practice in software development which states that features should only be added when required
+  
+2- KISS (Keep It Simple, Stupid)
+  
+3- DRY (Don’t Repeat Yourself)
