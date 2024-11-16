@@ -56,3 +56,6 @@ class Service {
 2- KISS (Keep It Simple, Stupid)
   
 3- DRY (Don’t Repeat Yourself)
+
+## ⚡4- ASCII Table
+![sorting_algorithms](images/ASCII.jpg)
