@@ -5,6 +5,7 @@
 DBMS (Database Management Systems) :
 
 1- Relational DB (SQL server)
+- [READ-SQL](https://www.w3schools.com/sql/)
 
 2- Non Relational DB ( NoSQL)
 
