@@ -1,22 +1,28 @@
-class Animal {
-  String _name;
-  Animal(this._name);
+class Human {
+  String? _email;
 
 // Setter method
-  set setName(String name) {
-    _name = name;
-  }
+  set setEmail(String email) {
+    if(email.contains('@')){
+      _email = email;
+    }else{
+      print('Invalid email: must contain "@"');
+    }
+    }
 
 // Getter method
-  String get getName {
-    return _name;
+  String? get getEmail {
+    return _email;
   }
 }
 
 void main() {
-  Animal object = Animal('omar');
-  print(object.getName);
+  Human object = Human();
+  print(object.getEmail);            //null
+
   //to update name by setter and getter
-  object.setName = "ali";
-  print(object.getName);
+  object.setEmail = "ali";           //null
+  print(object.getEmail);            //Invalid email: must contain "@"
+  object.setEmail = "ali@gmail.com"; //valid
+  print(object.getEmail);            //ali@gmail.com
 }
