@@ -16,13 +16,22 @@ class Human {
   }
 }
 
-void main() {
-  Human object = Human();
-  print(object.getEmail);            //null
+class Man extends Human{
+//take all from Animal class //inheritance
+}
 
-  //to update name by setter and getter
-  object.setEmail = "ali";           //null
-  print(object.getEmail);            //Invalid email: must contain "@"
-  object.setEmail = "ali@gmail.com"; //valid
-  print(object.getEmail);            //ali@gmail.com
+void main() {
+  Human human = Human();
+  //to update name by setter and getter in Human
+  human.setEmail = "ali";
+  print(human.getEmail);            //Invalid email: must contain "@"
+  human.setEmail = "human@gmail.com";
+  print(human.getEmail);            //human@gmail.com
+
+  Man man = Man();
+  //to update name by setter and getter in Man
+  man.setEmail = "man";
+  print(man.getEmail);            //Invalid email: must contain "@"
+  man.setEmail = "man@gmail.com";
+  print(man.getEmail);            //man@gmail.com
 }
