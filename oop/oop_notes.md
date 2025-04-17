@@ -1,6 +1,7 @@
 ### 1️⃣ Encapsulation
 ✨Hide data.
 - إخفاء البيانات داخل الكلاس ومنع التعديل المباشر عليها باستخدام private variables و getters/setters
+- بنعمل فيها validation (لازم الايميل يكون فيه @ مثلا).
 ### 2️⃣ Inheritance
 ✨Relation between two class.
 - الوراثة تعني إن كلاس يقدر يرث الخصائص (properties) والدوال (methods) من كلاس تاني.
