@@ -1,45 +1,46 @@
-abstract class Animal {
-  String _name;
-  Animal(this._name);
+abstract class Human {
+  String? _email;
+
   // Abstract method
   void eat();
   // Abstract method
   void drink();
 
   // Setter
-  set setName(String name) {
-    _name = name;
+  set setEmail(String email) {
+    if(email.contains('@')){
+      _email = email;
+    }else{
+      print('Invalid email: must contain "@"');
+    }
   }
+
   // Getter
-  String get getName {
-    return _name;
+  String? get getEmail {
+    return _email;
   }
 }
 
-class Birds extends Animal {
-  Birds(super.name);
+class Man extends Human {
 
   @override
   void eat() {
-    print("birds eat");
+    print("man eat");
   }
 
   @override
   void drink() {
-    print('bird drink');
+    print('man drink');
   }
 }
 
 void main() {
-  Birds birds = Birds("birds name");
-  String birdsName = birds.getName;
-  print(birdsName);
-  birds.eat();
+  Man man = Man();
+  man.setEmail = "ali@gmail.com";
+  String? manEmail = man.getEmail;
+  print(manEmail);
+  man.eat();
 
   // Cannot instantiate an abstract class
-  // Animal object = Animal('omar');
-  // Accessing the private variable through the getter
-  // String lionName = object.name;
-  // print(lionName);
-  // object.eat();
+  // Human object = Human('omar'); //false
 }
