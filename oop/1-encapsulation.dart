@@ -21,8 +21,8 @@ void main() {
   print(object.getEmail);            //null
 
   //to update name by setter and getter
-  object.setEmail = "ali";           //null
-  print(object.getEmail);            //Invalid email: must contain "@"
+  object.setEmail = "ali";           //Invalid email: must contain "@"
+  print(object.getEmail);            //null
   object.setEmail = "ali@gmail.com"; //valid
   print(object.getEmail);            //ali@gmail.com
 }
