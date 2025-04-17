@@ -23,15 +23,15 @@ class Man extends Human{
 void main() {
   Human human = Human();
   //to update name by setter and getter in Human
-  human.setEmail = "ali";
-  print(human.getEmail);            //Invalid email: must contain "@"
-  human.setEmail = "human@gmail.com";
+  human.setEmail = "ali";           //Invalid email: must contain "@"
+  print(human.getEmail);            //null
+  human.setEmail = "human@gmail.com"; 
   print(human.getEmail);            //human@gmail.com
 
   Man man = Man();
   //to update name by setter and getter in Man
-  man.setEmail = "man";
-  print(man.getEmail);            //Invalid email: must contain "@"
+  man.setEmail = "man";           //Invalid email: must contain "@"
+  print(man.getEmail);            //null
   man.setEmail = "man@gmail.com";
   print(man.getEmail);            //man@gmail.com
 }
