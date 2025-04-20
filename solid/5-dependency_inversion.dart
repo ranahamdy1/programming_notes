@@ -1,37 +1,46 @@
-abstract class CalcOperation {
-  void calc();
+abstract class Calc {
+  double calculate();
 }
 
-class Rectangle implements CalcOperation {
+class GetArea extends Calc {
+  GetArea(this.length, this.width);
+  double length;
+  double width;
+
   @override
-  void calc() {
-    print("Rectangle calc");
+  double calculate() {
+    return length * width;
   }
 }
 
-class Circle implements CalcOperation {
+class GetPerimeter extends Calc {
+  GetPerimeter(this.length, this.width);
+  double length;
+  double width;
+
   @override
-  void calc() {
-    print("Circle calc");
+  double calculate() {
+    return 2 * (length + width);
   }
 }
 
 //Dependency Inversion
-//The Calculator class depends on the abstraction CalcOperation rather than concrete implementations like Rectangle or Circle.
-class Calculator {
-  final List<CalcOperation> operations; //dependency injection
-  Calculator(this.operations);
+//The Shape class depends on the abstraction Calc rather than concrete implementations like GetArea or GetPerimeter.
+class Shape {
+  Calc calc; //dependency injection
+  Shape(this.calc);
 
-  void performCalculations() {
-    for (var operation in operations) {
-      operation.calc();
-    }
+  double getShapeValue() {
+    return calc.calculate(); // استدعاء الميثود لحساب القيمة
   }
 }
 
 void main() {
-  var rectangle = Rectangle();
-  var circle = Circle();
-  var calculator = Calculator([rectangle, circle]);
-  calculator.performCalculations();
+  GetArea getArea = GetArea(5, 3);
+  Shape getAreaShape = Shape(getArea);
+  print("Area : ${getAreaShape.getShapeValue()}");
+
+  GetPerimeter getPerimeter = GetPerimeter(5, 3);
+   Shape getPerimeterShape = Shape(getPerimeter);
+  print("Perimeter: ${getPerimeterShape.getShapeValue()}");
 }
