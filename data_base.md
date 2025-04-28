@@ -6,9 +6,6 @@
 1- Relational Database (علاقات بين البيانات، زي جداول مرتبطة ببعض) ➔ EX: MySQL - PostgreSQL - SQLite
 
 2- NoSQL Database (بيانات بدون جداول ، أنسب للبيانات المرنة) ➔ EX: MongoDB - Firebase Firestore
-
->> DBMS (Database Management Systems) ➔ هو البرنامج اللي بيدير قواعد البيانات
-
 - ✔ أنواع العمليات الأساسية على الداتا بيز (عمليات CRUD) :
 
 1- Create (إنشاء بيانات جديدة) ➔ INSERT
@@ -89,6 +86,7 @@ CASE
 END AS QuantityText
 FROM OrderDetails;
 ```
+>> DBMS (Database Management Systems) ➔ هو البرنامج اللي بيدير قواعد البيانات
 
 (SQL) EX:
 ![db1](images/db1.jpeg)
