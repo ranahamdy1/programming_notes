@@ -1,60 +1,70 @@
 ⚡ Data Base 
 
-مجموعه من البيانات يتم ترتيبها بشكل مرتب منظم لكى نصل إليها بسهوله ونقدر نعدلها عليها بسهوله 
+- مكان منظم بنخزن فيه البيانات بشكل مرتب علشان نقدر نرجع لها ونعدل عليها بسهولة بعدين. زي دفتر كبير بس على الكمبيوتر.
+- ✔ أنواع قواعد البيانات المشهورة :
 
-DBMS (Database Management Systems) :
+1- Relational Database (علاقات بين البيانات، زي جداول مرتبطة ببعض) ➔ EX: MySQL - PostgreSQL - SQLite
 
-1- Relational DB (SQL server) [ *SQL => Structured Query Language* ]
+2- NoSQL Database (بيانات بدون جداول ، أنسب للبيانات المرنة) ➔ EX: MongoDB - Firebase Firestore
+- ✔ أنواع العمليات الأساسية على الداتا بيز (عمليات CRUD) :
+
+1- Create (إنشاء بيانات جديدة) ➔ INSERT
+
+2- Read (قراءة بيانات) ➔ SELECT
+
+3- Update (تحديث بيانات) ➔ UPDATE
+
+4- Delete (حذف بيانات) ➔ DELETE
+
+EX: 
+
+SQL (*Structured Query Language*):
 - [READ-SQL](https://www.w3schools.com/sql/)
 - [YOUTUBE-SQL](https://www.youtube.com/watch?v=zpnHsWOy0RY&list=PLP9IO4UYNF0UQkBXlTMSw0CYsxv-GDkkI)
 
-2- Non Relational DB ( NoSQL)
+1- إنشاء قاعدة بيانات وجداول:
+```
+-- إنشاء قاعدة بيانات جديدة
+CREATE DATABASE myapp;
 
-SQL:
+-- استخدام قاعدة البيانات دي
+USE myapp;
+
+-- إنشاء جدول users
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 ```
-SELECT * FROM Customers;
->>>> return all values
+2- إضافة بيانات (Create):
 ```
+INSERT INTO users (name, email, password)
+VALUES ('Rana', 'rana@example.com', '123456');
 ```
-SELECT column1, column2, ...  
-FROM table_name;
+3- قراءة بيانات (Read):
 ```
+SELECT * FROM users;
 ```
-SELECT DISTINCT Country
-FROM Customers;
->>>> ⚡return only different values
+4- تعديل بيانات (Update):
 ```
+UPDATE users
+SET name = 'Sara Mohamed'
+WHERE id = 1;
 ```
-SELECT * FROM Customers
-WHERE Country='Mexico';
->>>> where =>> (used to extract only those records that fulfill a specified condition)
->>>> WHERE clause is not only used in SELECT statements, it is also used in UPDATE, DELETE, etc.!
+5- حذف بيانات (Delete):
 ```
+DELETE FROM users
+WHERE id = 1;
 ```
-SELECT * FROM Products
-ORDER BY Price DESC|ASC;
->>>> ⚡The ORDER BY keyword is used to sort the result-set in ascending or descending order.
-```
-```
-INSERT INTO table_name (column1, column2, column3, ...)
-VALUES (value1, value2, value3, ...);
->>>> The INSERT INTO statement is used to insert new records in a table.
-```
-```
-SELECT column_names
-FROM table_name
-WHERE column_name IS NULL;
->>>> NULL is not 0 or " "
-```
-```
-UPDATE table_name
-SET column1 = value1, column2 = value2, ...
-WHERE condition;
-```
-```
-DELETE FROM table_name WHERE condition;
-```
-- ✔JOIN [ دى لو عندى جدولين عايزه ادمجهم علشان اطلع معلومه معينه]
+- SELECT * ➔ return all values
+- DISTINCT ➔ return only different values
+- ORDER BY ➔ is used to sort the result-set in ascending or descending order (DESC|ASC).
+- NULL ➔ is not 0 or " " .
+
+- ✔JOIN ➔ دى لو عندى جدولين عايزه ادمجهم علشان اطلع معلومه معينه
 
  مثلا عندى جدول فى المثال هنا [JOIN-SQL](https://www.w3schools.com/sql/sql_join.asp)
 
@@ -62,20 +72,21 @@ DELETE FROM table_name WHERE condition;
    
    اسمه ايه والاسم ف الجدول التانى فهعمل ايه
 ```
-- SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
 FROM Orders
 INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 ```
 - ✔CASE
 ```
 EX:
-- SELECT OrderID, Quantity,
+SELECT OrderID, Quantity,
 CASE
     WHEN Quantity > 30 THEN 'The quantity is greater than 30'
     ELSE 'The quantity is under 30'
 END AS QuantityText
 FROM OrderDetails;
 ```
+>> DBMS (Database Management Systems) ➔ هو البرنامج اللي بيدير قواعد البيانات
 
 (SQL) EX:
 ![db1](images/db1.jpeg)
