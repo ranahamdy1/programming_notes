@@ -176,3 +176,20 @@ numbers.forEach((number) {
   print(number);
 });
 ```
+## ✨ Set
+- هو نوع من أنواع الـ Collections في Dart، شبه List لكن فيه فرقين مهمين:
+1- العناصر فيه غير مكررة (no duplicates)
+2- الترتيب مش مهم زي ما هو في List
+```
+void main() {
+  Set<int> numbers = {1, 2, 3, 2, 4, 3};
+  print(numbers); // {1, 2, 3, 4}
+}
+
+// list to set
+
+List<int> list = [1, 2, 2, 3, 4];
+Set<int> set = list.toSet();
+print(set); // {1, 2, 3, 4}
+
+```
