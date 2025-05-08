@@ -161,3 +161,18 @@ Map<String, int> scores = {
 
 print(scores['Ali']); // 90
 ```
+## ✨ For in & ForEach
+- for in
+```
+List<int> numbers = [1, 2, 3];
+for (int number in numbers) {
+  print(number);
+}
+```
+- ForEach
+```
+List<int> numbers = [1, 2, 3];
+numbers.forEach((number) {
+  print(number);
+});
+```
