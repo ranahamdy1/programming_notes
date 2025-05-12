@@ -27,3 +27,5 @@
 السلوك بتاع ال object او ال class
 
 -لو عندى اكتر من if conditions هنا هنفذ اوامر تحت شرط معين وبكده هينفذ سلوك معين
+
+- [READ](https://sourcemaking.com/design_patterns)
