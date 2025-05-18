@@ -100,7 +100,7 @@ class Service {
 3- AOT (Ahead-Of-Time Compilation) :
 
 - بيحوّل الكود إلى machine code قبل التشغيل، زي compiler.
-- لكن الأداء بيكون مش بنفس كفاءة C++ لأن:
+- في Dart بتستخدمه لما تعمل flutter build عشان تسرّع التطبيق وقت التشغيل لكن الأداء بيكون مش بنفس كفاءة C++ لأن:
   
 1- في Dart، الذاكرة وإدارة الكائنات بتعتمد على Garbage Collector.
 
