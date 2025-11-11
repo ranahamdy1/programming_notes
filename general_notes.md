@@ -113,3 +113,50 @@ class Service {
 2- بتستخدم JVM لكن مع Just-In-Time (JIT) compilation بيخليها قريبة جدًا من C++ في السرعة (Java).
 
 3- فيها JIT (وقت التطوير) وAOT (وقت التشغيل)، بس مش بنفس الكفاءة في الحسابات الكثيفة أو إدارة الذاكرة الدقيقة اللي مطلوبة في المسابقات (Dart).
+## ⚡9- Abstract & Interface
+1- الــ Abstract Class 
+- ده كلاس عادي بس ناقص، يعني:
+- ممكن يحتوي على دوال كاملة لها تنفيذ.
+- ممكن يحتوي على دوال abstract ملهاش تنفيذ.
+- ممكن يحتوي على properties.
+- ممكن تعملي له inheritance واحد بس (PHP لا تدعم تعدد الوراثة في الكلاسات).
+```php
+abstract class Animal {
+    public $name;
+
+    public function eat() {
+        echo "Eating...";
+    }
+
+    abstract public function makeSound();
+}
+
+class Dog extends Animal {
+    public function makeSound() {
+        echo "Bark";
+    }
+}
+```
+2- الــ Interface: 
+- ده عقد بس، يعني:
+- لا يحتوي على أي تنفيذ لدوال (قبل PHP 8).
+- يحتوي فقط على method signatures.
+- لا يحتوي على properties عادية، بس ممكن constants.
+- الكلاس يقدر ينفذ (implements) أكثر من Interface واحد.
+- كل الدوال داخل interface لازم تكون public.
+```php
+interface Shape {
+    public function calculateArea();
+    public function calculatePerimeter();
+}
+
+class Circle implements Shape {
+    public function calculateArea() {
+        return "Area of circle";
+    }
+
+    public function calculatePerimeter() {
+        return "Perimeter of circle";
+    }
+}
+```
